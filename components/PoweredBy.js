@@ -1,4 +1,4 @@
-import { siteConfig } from '@/l'
+import { siteCnfig } from '@/l'
 
 /**
  * 驱动版权
