@@ -1,4 +1,4 @@
-import { siteCnfig } from '@/l'
+import { siteConfig } from '@/lib/config'
 
 /**
  * 驱动版权
@@ -6,12 +6,14 @@ import { siteCnfig } from '@/l'
  */
 export default function PoweredBy(props) {
   return (
-    <div className={`inline text-sm font-serif ${props.class || ''}`}>
-      <span class='mr-1'>Powered by</span>
+    <div className={`inline text-sm font-serif ${props.className || ''}`}>
+      <span className='mr-1'>Powered by</span>
+      {/* https://www.aze66.top/ */}
       <a
-        href='https://gi.com'
+        href='https://yourwebsite.com' 
         className='underline justify-start'>
-        Notion {siteConfig('111')}
+        {/* 阿泽 */}
+        Your Name Or Website {siteConfig('VERSION')} 
       </a>
       .
     </div>
